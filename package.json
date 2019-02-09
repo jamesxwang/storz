@@ -1,12 +1,12 @@
 {
-  "name": "wechat-h5-boilerplate",
-  "version": "0.3.6",
-  "description": "A fullpage scrolling website boilerplate for mobile devices.",
+  "name": "karl-storz-endoskope",
+  "version": "1.0.0",
+  "description": "karl-storz-endoskope",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/panteng/wechat-h5-boilerplate.git"
+    "url": "git+https://github.com/cn-wx/storz.git"
   },
-  "author": "Chris Pan",
+  "author": "James Wang",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.10.1",
@@ -31,6 +31,7 @@
     "animate.css": "^3.4.0",
     "jquery": "^3.1.1",
     "normalize.css": "^5.0.0",
+    "pxloader": "^1.1.2",
     "swiper": "^3.2.7"
   }
 }

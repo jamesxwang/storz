@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Wechat H5 Boilerplate</title>
+    <title>Karl Storz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Add your keywords and description here for SEO. -->
     <meta name="keywords" content="">
@@ -25,14 +25,23 @@
 
 <body>
 <div class="loading-overlay">
+    <div class="loading-wrapper">
+        <div class="loading"></div>
+    </div>
+    <div class="progressNumb" style="font-size: 16.4063px; line-height: 16.4063px;">0%</div>
+    <div class="ProgressWrap">
+        <div class="loadingProgress1 overlay"></div>
+        <div class="loadingProgress2 overlay" style="width: 100%;"></div>
+    </div>
     <img src="images/loading.svg">
 </div>
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide slide-1">
-            <div class="item-image animated" data-ani-name="slideInLeft" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">I'm a coder!</p>
+            <div class="logo"></div>
+            <div class="title animated" data-ani-name="slideInLeft" data-ani-duration="1s" data-ani-delay="0s"></div>
+            <div class="text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s"></div>
         </div>
         <div class="swiper-slide slide-2">
             <div class="item-image animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0s"></div>
@@ -48,14 +57,6 @@
 <button class="up-arrow">
     <i class="icon-angle-double-up"></i>
 </button>
-
-<button class="btn-music">
-    <i class="icon-note"></i>
-</button>
-
-<audio loop>
-    <source src="audios/background.mp3" type="audio/mpeg">
-</audio>
 
 <!-- Don't delete this. It's needed for development workflow. -->
 <!-- inject:js -->
