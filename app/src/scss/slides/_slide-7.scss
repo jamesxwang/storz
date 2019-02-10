@@ -1,4 +1,4 @@
-.slide-6 {
+.slide-7 {
     background: url('../images/slide_6_background.png');
     background-repeat:no-repeat;
     background-size: 100% 100%;
@@ -20,8 +20,8 @@
         background-image: url('../images/logo.png');
     }
     .title {
-        width: 60%;
-        height: 30%;
+        width: 70%;
+        height: 35%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -30,19 +30,27 @@
         left: 0;
         right: 0;
         margin: auto;
-        background-image: url('../images/slide_6_title.png');
+        background-image: url('../images/slide_7_title.png');
     }
-    .calendar {
+    .info1 {
+        top: 20%;
+        background-image: url('../images/slide_7_info1.png');
+
+    }
+    .info2 {
+        top: 40%;
+        background-image: url('../images/slide_7_info2.png');
+
+    }
+    .info1, .info2 {
         width: 80%;
         height: 40%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        top: 30%;
         left: 0;
         right: 0;
         margin: auto;
-        background-image: url('../images/slide_6_calendar.png');
     }
 }

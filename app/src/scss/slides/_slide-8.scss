@@ -1,5 +1,5 @@
-.slide-6 {
-    background: url('../images/slide_6_background.png');
+.slide-8 {
+    background: url('../images/slide_8_background.png');
     background-repeat:no-repeat;
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -20,29 +20,39 @@
         background-image: url('../images/logo.png');
     }
     .title {
-        width: 60%;
-        height: 30%;
+        width: 40%;
+        height: 20%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        top: 5%;
+        top: 10%;
         left: 0;
         right: 0;
         margin: auto;
-        background-image: url('../images/slide_6_title.png');
+        background-image: url('../images/slide_8_title.png');
     }
-    .calendar {
-        width: 80%;
-        height: 40%;
+    .contact1 {
+        top: 20%;
+        background-image: url('../images/slide_8_contact1.png');
+    }
+    .contact2 {
+        top: 36%;
+        background-image: url('../images/slide_8_contact2.png');
+    }
+    .contact3 {
+        top: 51%;
+        background-image: url('../images/slide_8_contact3.png');
+    }
+    .contact1, .contact2, .contact3 {
+        width: 70%;
+        height: 35%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        top: 30%;
         left: 0;
         right: 0;
         margin: auto;
-        background-image: url('../images/slide_6_calendar.png');
     }
 }

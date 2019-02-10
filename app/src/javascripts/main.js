@@ -45,6 +45,15 @@
             'slide_5_footprint3.png',            
             'slide_6_background.png',
             'slide_6_title.png',
+            'slide_6_calendar.png',
+            'slide_7_title.png',
+            'slide_7_info1.png',
+            'slide_7_info2.png',
+            'slide_8_background.png',
+            'slide_8_title.png',
+            'slide_8_contact1.png',
+            'slide_8_contact2.png',
+            'slide_8_contact3.png',
 
         ];
         for(var i = 0; i < fileList.length; i++){
