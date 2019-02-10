@@ -1,6 +1,22 @@
 var $ = require('jquery');
 
 module.exports = {
+    initAnimationEnd() {
+        return animationEnd = (function(el) {
+            var animations = {
+                animation: 'animationend',
+                OAnimation: 'oAnimationEnd',
+                MozAnimation: 'mozAnimationEnd',
+                WebkitAnimation: 'webkitAnimationEnd',
+            };
+            for (var t in animations) {
+                if (el.style[t] !== undefined) {
+                    return animations[t];
+                }
+            }
+        })(document.createElement('div'));
+    },
+
     initAnimationItems: function() {
         $('.animated').each(function () {
             var aniDuration, aniDelay;
@@ -21,15 +37,28 @@ module.exports = {
     },
 
     playAnimation: function (swiper) {
-        this.clearAnimation();
+        var self = this;
+        var animationEnd = self.initAnimationEnd();
+        self.clearAnimation();
         
         var aniItems = swiper.slides[swiper.activeIndex].querySelectorAll('.animated');
-        
+
         $(aniItems).each(function () {
+            var preAniName, postAniName;
             var aniName;
             $(this).css({ 'visibility': 'visible' });
+            preAniName = $(this).data('pre-ani-name');
+            postAniName = $(this).data('post-ani-name');
             aniName = $(this).data('ani-name');
-            $(this).addClass(aniName);
+            if (preAniName && postAniName) {
+                $(this).addClass(preAniName);
+                $(this).on(animationEnd, function() {
+                    $(this).attr('class', $(this).data('origin-class'));
+                    $(this).addClass(postAniName);
+                });
+            } else {
+                $(this).addClass(aniName);
+            }
         });
     },
 

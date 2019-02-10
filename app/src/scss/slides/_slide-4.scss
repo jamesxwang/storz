@@ -1,5 +1,5 @@
-.slide-3 {
-    background: url('../images/slide_3_background.png');
+.slide-4 {
+    background: url('../images/slide_4_background.png');
     background-repeat:no-repeat;
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -30,38 +30,36 @@
         left: 0;
         right: 0;
         margin: auto;
-        background-image: url('../images/slide_3_title.png');
+        background-image: url('../images/slide_4_title.png');
     }
     .option_wrapper {
         .option1 {
-            top: 25%;
-            background-image: url('../images/slide_3_option1.png');    
+            top: 35%;
+            left: 12%;
+            background-image: url('../images/slide_4_option1.png');
         }
         .option2 {
             top: 35%;
-            background-image: url('../images/slide_3_option2.png');    
+            right: 12%;
+            background-image: url('../images/slide_4_option2.png');
         }
         .option3 {
-            top: 45%;
-            background-image: url('../images/slide_3_option3.png');    
+            top: 58%;
+            left: 12%;
+            background-image: url('../images/slide_4_option3.png');
         }
         .option4 {
-            top: 55%;
-            background-image: url('../images/slide_3_option4.png');    
+            top: 58%;
+            right: 12%;
+            background-image: url('../images/slide_4_option4.png');
         }
-        .option5 {
-            top: 65%;
-            background-image: url('../images/slide_3_option5.png');    
-        }
-        .option1, .option2, .option3, .option4, .option5 {
-            width: 50%;
-            height: 30%;
+        .option1, .option2, .option3, .option4 {
+            width: 35%;
+            height: 20%;
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
             position: absolute;
-            left: 0;
-            right: 0;
             margin: auto;
         }
     }

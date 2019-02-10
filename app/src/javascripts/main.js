@@ -19,7 +19,33 @@
             'slide_1_background.png',
             'slide_1_title.png',
             'slide_1_text.png',
-            
+            'slide_1_start.png',
+            'slide_1_search.png',
+            'slide_2_title.png',
+            'slide_3_background.png',
+            'slide_3_title.png',
+            'slide_3_option1.png',
+            'slide_3_option2.png',
+            'slide_3_option3.png',
+            'slide_3_option4.png',
+            'slide_3_option5.png',
+            'slide_4_background.png',
+            'slide_4_title.png',
+            'slide_4_option1.png',
+            'slide_4_option2.png',
+            'slide_4_option3.png',
+            'slide_4_option4.png',
+            'slide_5_background.png',
+            'slide_5_title.png',
+            'slide_5_scene1.png',
+            'slide_5_scene2.png',
+            'slide_5_scene3.png',
+            'slide_5_footprint1.png',
+            'slide_5_footprint2.png',            
+            'slide_5_footprint3.png',            
+            'slide_6_background.png',
+            'slide_6_title.png',
+
         ];
         for(var i = 0; i < fileList.length; i++){
             var pxImage = new PxLoaderImage(BASE_IMAGE_PATH + fileList[i]);
@@ -27,7 +53,7 @@
             loader.add(pxImage);
         }
         loader.addCompletionListener(function(){
-            console.log("预加载图片："+fileList.length+"张");
+            console.log("Preload: "+fileList.length+" images in total.");
             
             // init Swiper
             new Swiper('.swiper-container', {

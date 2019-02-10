@@ -1,0 +1,93 @@
+.slide-5 {
+    background: url('../images/slide_5_background.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    .logo {
+        width: 15%;
+        height: 15%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        margin: auto;
+        background-image: url('../images/logo.png');
+    }
+    .title {
+        width: 70%;
+        height: 35%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url('../images/slide_5_title.png');
+    }
+    .scene_wrapper {
+        .scene1, .scene2, .scene3 {
+            width: 70%;
+            height: 35%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            margin: auto;
+            z-index: 2;
+        }
+        .footprint1, .footprint2, .footprint3 {
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            margin: auto;
+            z-index: 1;
+        }
+        .scene1 {
+            top: 30%;
+            right: 5%;
+            background-image: url('../images/slide_5_scene1.png');
+        }
+        .footprint1 {
+            width: 60%;
+            height: 30%;
+            top: 35%;
+            left: 15%;
+            background-image: url('../images/slide_5_footprint1.png');
+        }
+        .scene2 {
+            top: 45%;
+            left: 3%;
+            background-image: url('../images/slide_5_scene2.png');
+        }
+        .footprint2 {
+            width: 22%;
+            height: 30%;
+            top: 60%;
+            left: 15%;
+            background-image: url('../images/slide_5_footprint2.png');
+        }
+        .scene3 {
+            width: 50%;
+            top: 61%;
+            left: 0;
+            right: 0;
+            background-image: url('../images/slide_5_scene3.png');
+        }
+        .footprint3 {
+            width: 15%;
+            height: 30%;
+            top: 65%;
+            right: 5%;
+            background-image: url('../images/slide_5_footprint3.png');
+        }
+    }
+}

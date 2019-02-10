@@ -1,1 +1,25 @@
 @charset "UTF-8";
+
+@keyframes searchAnimation {
+    from {
+
+    }
+
+    to {
+
+    }
+}
+
+.searchAnimation {
+    // -webkit-animation-name: searchAnimation;
+    // animation-name: searchAnimation;
+
+}
+@keyframes animX{
+    0% {left: 0px;}
+  100% {left: 50px;}
+}
+@keyframes animY{
+    0% {top: 0px;}
+  100% {top: 50px;}
+}
