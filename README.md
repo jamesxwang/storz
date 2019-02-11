@@ -14,7 +14,7 @@
 
 **使用手机**访问下面的地址或扫描下方二维码
 
-[http://karlstorz.quantity.site][6]
+[http://karlstorz.quantify.site][6]
 
 ![Scan Me][7]
 
@@ -103,7 +103,7 @@
   [3]: https://github.com/jquery/jquery
   [4]: https://github.com/necolas/normalize.css
   [5]: https://github.com/thinkpixellab/PxLoader
-  [6]: http://karlstorz.quantity.site
+  [6]: http://karlstorz.quantify.site
   [7]: QRCode.png
   [8]: http://npm.taobao.org/
   [9]: http://npm.taobao.org/
