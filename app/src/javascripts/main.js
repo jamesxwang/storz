@@ -3,7 +3,7 @@
 
     // load dependencies
     var animationControl = require('./animation-control.js');
-
+    var popupControl = require('./popup-control.js');
 
     $(document).ready(function () {
         /***********************************************
@@ -29,6 +29,11 @@
             'slide_3_option3.png',
             'slide_3_option4.png',
             'slide_3_option5.png',
+            'slide_3_popup1.png',
+            'slide_3_popup2.png',
+            'slide_3_popup3.png',
+            'slide_3_popup4.png',
+            'slide_3_popup5.png',
             'slide_4_background.png',
             'slide_4_title.png',
             'slide_4_option1.png',
@@ -87,6 +92,7 @@
                 onInit: function (swiper) {
                     animationControl.initAnimationItems();  // get items ready for animations
                     animationControl.playAnimation(swiper); // play animations of the first slide
+                    popupControl.handlePopupEvents(swiper);
                 },
                 onTransitionStart: function (swiper) {     // on the last slide, hide .btn-swipe
                     if (swiper.activeIndex === swiper.slides.length - 1) {
@@ -97,6 +103,7 @@
                 },
                 onTransitionEnd: function (swiper) {       // play animations of the current slide
                     animationControl.playAnimation(swiper);
+                    popupControl.handlePopupEvents(swiper);
                 },
             });
 

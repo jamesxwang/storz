@@ -1,7 +1,7 @@
 var $ = require('jquery');
 
 module.exports = {
-    initAnimationEnd() {
+    initAnimationEnd: function() {
         return animationEnd = (function(el) {
             var animations = {
                 animation: 'animationend',
