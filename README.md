@@ -4,10 +4,19 @@
 
 ## 目录
 
+ - [实时预览](#实时预览)
  - [依赖列表](#依赖列表)
  - [项目结构](#项目结构)
  - [开发流程](#开发流程)
  - [发布流程](#发布流程)
+
+## 实时预览
+
+**使用手机**访问下面的地址或扫描下方二维码
+
+[http://karlstorz.quantity.site][6]
+
+![Scan Me][7]
 
 ## 依赖列表
 1. [Swiper][1] --> 用于实现页面的整屏滚动
@@ -94,6 +103,8 @@
   [3]: https://github.com/jquery/jquery
   [4]: https://github.com/necolas/normalize.css
   [5]: https://github.com/thinkpixellab/PxLoader
+  [6]: http://karlstorz.quantity.site
+  [7]: QRCode.png
   [8]: http://npm.taobao.org/
   [9]: http://npm.taobao.org/
   [10]: https://github.com/nodejs/node-gyp
