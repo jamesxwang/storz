@@ -25,7 +25,7 @@ module.exports = {
             
             aniDuration = $(this).data('ani-duration');
             aniDelay = $(this).data('ani-delay');
-            
+
             $(this).css({
                 'visibility': 'hidden',
                 'animation-duration': aniDuration,
@@ -40,7 +40,7 @@ module.exports = {
         var self = this;
         var animationEnd = self.initAnimationEnd();
         self.clearAnimation();
-        
+
         var aniItems = swiper.slides[swiper.activeIndex].querySelectorAll('.animated');
 
         $(aniItems).each(function () {

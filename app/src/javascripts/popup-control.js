@@ -48,17 +48,12 @@ module.exports = {
         if (swiper.activeIndex == 2) {
             var pageNum = swiper.activeIndex + 1;
             var popupCount = $('.slide-' + pageNum + ' .popup_wrapper div').length;
-            console.log(popupCount);
             for (var i = 1; i <= popupCount; ++i) {
                 var $popup = $('.slide-' + pageNum + ' .popup' + i);
-                console.log('popup: ', $popup);
-
                 $popup.on('click',function() {
                     var self = this;
-                    console.log(this.data('origin-class'));
                     this.attr('class', this.data('origin-class'));
                     endAniName = this.data('end-ani-name');
-                    console.log(endAniName);
                     this.addClass(endAniName);
                     this.one(animationEnd, function() {
                         self.css({ 'visibility': 'hidden' });
