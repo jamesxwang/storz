@@ -25,7 +25,7 @@ module.exports = {
         });
     },
     showPopup: function(swiper) {
-        if (swiper.activeIndex == 2) {
+        if (swiper.activeIndex == 2 || swiper.activeIndex == 3) {
             var aniName;
             var pageNum = swiper.activeIndex + 1;
             var optionCount = $('.slide-3 .option_wrapper div').length;
@@ -45,7 +45,7 @@ module.exports = {
         var animationEnd = animationControl.initAnimationEnd();
         var endAniName;
 
-        if (swiper.activeIndex == 2) {
+        if (swiper.activeIndex == 2 || swiper.activeIndex == 3) {
             var pageNum = swiper.activeIndex + 1;
             var popupCount = $('.slide-' + pageNum + ' .popup_wrapper div').length;
             for (var i = 1; i <= popupCount; ++i) {
