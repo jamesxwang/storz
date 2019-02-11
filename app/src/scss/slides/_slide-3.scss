@@ -65,6 +65,18 @@
             margin: auto;
         }
     }
+    .search {
+        width: 5%;
+        height: 2.5%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 42%;
+        left: 70%;
+        margin: auto;
+        background-image: url('../images/slide_1_search.png');
+    }
     .popup_wrapper {
         .popup1 {
             background-image: url('../images/slide_3_popup1.png');

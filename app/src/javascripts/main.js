@@ -19,7 +19,6 @@
             'slide_1_background.png',
             'slide_1_title.png',
             'slide_1_text.png',
-            'slide_1_start.png',
             'slide_1_search.png',
             'slide_2_title.png',
             'slide_3_background.png',

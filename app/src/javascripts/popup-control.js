@@ -28,7 +28,7 @@ module.exports = {
         if (swiper.activeIndex == 2 || swiper.activeIndex == 3) {
             var aniName;
             var pageNum = swiper.activeIndex + 1;
-            var optionCount = $('.slide-3 .option_wrapper div').length;
+            var optionCount = $('.slide-' + pageNum + ' .option_wrapper div').length;
             for (var i = 1; i <= optionCount; ++i) {
                 var $option = $('.slide-' + pageNum + ' .option' + i);
                 $option.on('click', function() {
@@ -52,6 +52,28 @@ module.exports = {
                 var $popup = $('.slide-' + pageNum + ' .popup' + i);
                 $popup.on('click',function() {
                     var self = this;
+
+                    if (this.hasClass('popup1')) {
+                        $('.slide-' + pageNum + ' .option1').attr('class',  $('.slide-' + pageNum + ' .option1').data('origin-class'));
+                        $('.slide-' + pageNum + ' .option1').addClass('viewed');
+                    }
+                    if (this.hasClass('popup2')) {
+                        $('.slide-' + pageNum + ' .option2').attr('class',  $('.slide-' + pageNum + ' .option2').data('origin-class'));
+                        $('.slide-' + pageNum + ' .option2').addClass('viewed');
+                    }
+                    if (this.hasClass('popup3')) {
+                        $('.slide-' + pageNum + ' .option3').attr('class',  $('.slide-' + pageNum + ' .option3').data('origin-class'));
+                        $('.slide-' + pageNum + ' .option3').addClass('viewed');
+                    }
+                    if (this.hasClass('popup4')) {
+                        $('.slide-' + pageNum + ' .option4').attr('class',  $('.slide-' + pageNum + ' .option4').data('origin-class'));
+                        $('.slide-' + pageNum + ' .option4').addClass('viewed');
+                    }
+                    if (this.hasClass('popup5')) {
+                        $('.slide-' + pageNum + ' .option5').attr('class',  $('.slide-' + pageNum + ' .option5').data('origin-class'));
+                        $('.slide-' + pageNum + ' .option5').addClass('viewed');
+                    }
+
                     this.attr('class', this.data('origin-class'));
                     endAniName = this.data('end-ani-name');
                     this.addClass(endAniName);

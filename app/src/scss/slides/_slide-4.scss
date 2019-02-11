@@ -63,6 +63,18 @@
             margin: auto;
         }
     }
+    .search {
+        width: 5%;
+        height: 5%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 48%;
+        left: 43%;
+        margin: auto;
+        background-image: url('../images/slide_1_search.png');
+    }
     .popup_wrapper {
         .popup1 {
             background-image: url('../images/slide_4_popup1.png');
@@ -76,7 +88,7 @@
         .popup4 {
             background-image: url('../images/slide_4_popup4.png');
         }
-        .popup1, .popup2, .popup3, .popup4, {
+        .popup1, .popup2, .popup3, .popup4 {
             width: 80%;
             height: 80%;
             background-position: center;

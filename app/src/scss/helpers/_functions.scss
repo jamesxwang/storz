@@ -62,3 +62,63 @@
     color: #fff
 }
 /****************************************/
+@-webkit-keyframes blink{
+    0%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.6;
+    }
+}
+@keyframes blink{
+    0%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.6;
+    }
+}
+.blink {
+    -webkit-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+@-webkit-keyframes spark{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes spark{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.spark {
+    -webkit-animation: spark 1s infinite;
+    animation: spark 1s infinite;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+/****************************************/
+.viewed {
+    opacity: .4;
+}
