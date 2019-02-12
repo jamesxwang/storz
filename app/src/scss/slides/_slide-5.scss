@@ -21,7 +21,7 @@
     }
     .title {
         width: 70%;
-        height: 35%;
+        height: 30%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -31,6 +31,19 @@
         right: 0;
         margin: auto;
         background-image: url('../images/slide_5_title.png');
+    }
+    .text {
+        width: 60%;
+        height: 30%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 15%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url('../images/slide_5_text.png');
     }
     .scene_wrapper {
         .scene1, .scene2, .scene3 {
@@ -89,5 +102,17 @@
             right: 5%;
             background-image: url('../images/slide_5_footprint3.png');
         }
+    }
+    .continue {
+        width: 30%;
+        height: 7%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 92%;
+        right: 10%;
+        margin: auto;
+        background-image: url('../images/slide_3_continue.png');
     }
 }

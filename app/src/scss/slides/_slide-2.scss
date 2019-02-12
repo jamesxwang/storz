@@ -32,4 +32,29 @@
         margin: auto;
         background-image: url('../images/slide_2_title.png');
     }
+    .start {
+        width: 30%;
+        height: 15%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 55%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url('../images/slide_1_start.png');
+    }
+    .search {
+        width: 5%;
+        height: 2.5%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 62%;
+        left: 60%;
+        margin: auto;
+        background-image: url('../images/slide_1_search.png');
+    }
 }

@@ -19,6 +19,7 @@
             'slide_1_background.png',
             'slide_1_title.png',
             'slide_1_text.png',
+            'slide_1_start.png',
             'slide_1_search.png',
             'slide_2_title.png',
             'slide_3_background.png',
@@ -33,6 +34,7 @@
             'slide_3_popup3.png',
             'slide_3_popup4.png',
             'slide_3_popup5.png',
+            'slide_3_continue.png',
             'slide_4_background.png',
             'slide_4_title.png',
             'slide_4_option1.png',
@@ -45,6 +47,7 @@
             'slide_4_popup4.png',
             'slide_5_background.png',
             'slide_5_title.png',
+            'slide_5_text.png',
             'slide_5_scene1.png',
             'slide_5_scene2.png',
             'slide_5_scene3.png',
@@ -75,7 +78,8 @@
             // init Swiper
             new Swiper('.swiper-container', {
                 mousewheelControl: true,
-                effect: 'coverflow',    // slide, fade, coverflow or flip
+                nextButton: '.swiper-button-next',
+                effect: 'fade',    // slide, fade, coverflow or flip
                 speed: 400,
                 direction: 'vertical',
                 fade: {
@@ -98,18 +102,22 @@
                     popupControl.handlePopupEvents(swiper);
                 },
                 onTransitionStart: function (swiper) {     // on the last slide, hide .btn-swipe
-                    if (swiper.activeIndex === swiper.slides.length - 1) {
-                        $upArrow.hide();
-                    } else {
+                    if (swiper.activeIndex === 0) {
                         $upArrow.show();
+                    } else {
+                        $upArrow.hide();
                     }
+                    // if (swiper.activeIndex === swiper.slides.length - 1) {
+                    //     $upArrow.hide();
+                    // } else {
+                    //     $upArrow.show();
+                    // }
                 },
                 onTransitionEnd: function (swiper) {       // play animations of the current slide
                     animationControl.playAnimation(swiper);
                     popupControl.handlePopupEvents(swiper);
                 },
             });
-
             // hide loading animation since everything is ready
             $(".loading-overlay").slideUp();
         });
