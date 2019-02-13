@@ -4,11 +4,14 @@
     width: 2rem;
     height: 2rem;
     position: fixed;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 50%;
     transform: translate3d(-50%, 0, 0);
     z-index: 20;
-    background: none;
+    background-image: url('../images/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
     border: none;
     padding: 0;
     animation: upArrowAni 2s infinite linear;

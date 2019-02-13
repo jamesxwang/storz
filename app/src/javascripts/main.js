@@ -16,6 +16,8 @@
         var BASE_IMAGE_PATH = '/images/';
         var fileList = [
             'logo.png',
+            'arrow.png',
+            'loading_people.png',
             'slide_1_background.png',
             'slide_1_title.png',
             'slide_1_text.png',

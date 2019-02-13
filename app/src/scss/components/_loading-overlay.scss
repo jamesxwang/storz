@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 .loading-overlay {
-    position: fixed;
+    background: url('../images/slide_1_background.png');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    z-index: 9999;
+    left: 0;
+    top: 0;
     img {
         width: 10rem;
         height: 10rem;
@@ -18,15 +21,15 @@
     }
 }
 
-// .loading-wrapper {
-//     margin: 50% auto 0;
-//     height: 25%;
-//     width: 50%;
-//     background:url('../images/loading_light.png') top center no-repeat;
-//     background-size:contain;
-//     animation:fade 2s infinite;
-//     -webkit-animation:fade 2s infinite;
-// }
+.loading-wrapper {
+    margin: 50% auto 0;
+    height: 20%;
+    width: 50%;
+    background:url('../images/loading_people.png') top center no-repeat;
+    background-size:contain;
+    animation:fade 2s infinite;
+    -webkit-animation:fade 2s infinite;
+}
 .loading{
     width: 70%;
     height: 70%;
@@ -45,19 +48,19 @@
 }
 .loadingProgress1{
     width: 100%;
-    background: #fff;
-    opacity: 0.2;
+    background: rgb(255, 83, 10);
+    opacity: 0.3;
 }
 .loadingProgress2{
     width: 0%;
-    background: #fff;
+    background: rgb(255, 83, 10);
 }
 
 .progressNumb{
     width: 100%;
     text-align: center;
-    margin: 5% auto 0;
-    color: #fff;
+    margin: 0 auto 0;
+    color: rgb(9, 62, 129);;
     font-size: 14px;
     line-height: 14px;
 }
