@@ -11,8 +11,10 @@
          ***********************************************/
         var loader = new PxLoader();
         var $upArrow = $('.up-arrow');
+        var bgMusic = $('audio').get(0);
+        var $btnMusic = $('.btn-music');
+
         // Images
-        // var BASE_IMAGE_PATH = '/dist/images/';
         var BASE_IMAGE_PATH = '/images/';
         var fileList = [
             'background.png',
@@ -70,14 +72,14 @@
             'slide_5_people1.gif',
             'slide_5_people2.gif',
             'slide_5_people3.gif',
-            'slide_6_title1_1',
-            'slide_6_title1_2',
-            'slide_6_title1_3',
-            'slide_6_title1_4',
-            'slide_6_title1_5',
-            'slide_6_title1_6',
-            'slide_6_title1_7',
-            'slide_6_title1_8',
+            'slide_6_title1_1.png',
+            'slide_6_title1_2.png',
+            'slide_6_title1_3.png',
+            'slide_6_title1_4.png',
+            'slide_6_title1_5.png',
+            'slide_6_title1_6.png',
+            'slide_6_title1_7.png',
+            'slide_6_title1_8.png',
             'slide_6_title2_1.png',
             'slide_6_title2_2.png',
             'slide_6_title2_3.png',
@@ -110,7 +112,7 @@
         }
         loader.addCompletionListener(function(){
             console.log("Preload: "+fileList.length+" images in total.");
-            
+
             // init Swiper
             new Swiper('.swiper-container', {
                 mousewheelControl: true,
@@ -136,6 +138,37 @@
                     animationControl.initAnimationItems();  // get items ready for animations
                     animationControl.playAnimation(swiper); // play animations of the first slide
                     popupControl.handlePopupEvents(swiper);
+                    
+                    // autoplay
+                    var autoPlayAudio = function() {
+                        wx.config({
+                            debug: false,
+                            appId: '',
+                            timestamp: 1,
+                            nonceStr: '',
+                            signature: '',
+                            jsApiList: []
+                        });
+                        wx.ready(function() {
+                            bgMusic.volume = 0.3;
+                            bgMusic.play();
+                        });
+                    }
+                    $btnMusic.show();
+                    if (!$btnMusic.hasClass('paused') && bgMusic.paused)
+                        bgMusic.play();
+                    autoPlayAudio();
+                    $btnMusic.addClass('ready');
+                    $btnMusic.click(function() {
+                        if (bgMusic.paused) {
+                            bgMusic.volume = 0.3;
+                            bgMusic.play();
+                            $(this).removeClass('paused');
+                        } else {
+                            bgMusic.pause();
+                            $(this).addClass('paused');
+                        }
+                    });
                 },
                 onTransitionStart: function (swiper) {     // on the last slide, hide .btn-swipe
                     if (swiper.activeIndex === 0) {
