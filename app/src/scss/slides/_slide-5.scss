@@ -1,5 +1,5 @@
 .slide-5 {
-    background: url('../images/slide_5_background.png');
+    background-image: url('../images/background.png');
     background-repeat:no-repeat;
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -7,6 +7,17 @@
     height: 100%;
     left: 0;
     top: 0;
+    .grass {
+        background-image: url('../images/grass.gif');
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0%;
+        margin-top: 15%;
+    }
     .logo {
         width: 15%;
         height: 15%;
@@ -39,7 +50,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        top: 15%;
+        top: 18%;
         left: 0;
         right: 0;
         margin: auto;
@@ -47,8 +58,10 @@
     }
     .scene_wrapper {
         .scene1, .scene2, .scene3 {
-            width: 70%;
+            width: 45%;
             height: 35%;
+            left: 0;
+            right: 0;
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -64,9 +77,35 @@
             margin: auto;
             z-index: 1;
         }
-        .scene1 {
-            top: 30%;
+        .people1,.people2,.people3 {
+            width: 30%;
+            height: 15%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            margin: auto;
+            z-index: 3;
+        }
+        .people1 {
+            top: 42%;
             right: 5%;
+            background-image: url('../images/slide_5_people1.gif');
+        }
+        .people2 {
+            top: 55%;
+            left: 3%;
+            background-image: url('../images/slide_5_people2.gif');
+        }
+        .people3 {
+            width: 40%;
+            height: 25%;
+            top: 67%;
+            right: 0;
+            background-image: url('../images/slide_5_people3.gif');
+        }
+        .scene1 {
+            top: 31%;
             background-image: url('../images/slide_5_scene1.png');
         }
         .footprint1 {
@@ -77,8 +116,7 @@
             background-image: url('../images/slide_5_footprint1.png');
         }
         .scene2 {
-            top: 45%;
-            left: 3%;
+            top: 46%;
             background-image: url('../images/slide_5_scene2.png');
         }
         .footprint2 {
@@ -89,10 +127,7 @@
             background-image: url('../images/slide_5_footprint2.png');
         }
         .scene3 {
-            width: 50%;
             top: 61%;
-            left: 0;
-            right: 0;
             background-image: url('../images/slide_5_scene3.png');
         }
         .footprint3 {

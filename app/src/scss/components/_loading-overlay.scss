@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .loading-overlay {
-    background: url('../images/slide_1_background.png');
+    background-image: url('../images/background.png');
     background-repeat:no-repeat;
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -9,15 +9,20 @@
     height: 100%;
     left: 0;
     top: 0;
-    img {
-        width: 10rem;
-        height: 10rem;
-        margin: auto;
+    z-index: 9998;
+    position: fixed;    
+    .grass {
+        background-image: url('../images/grass.gif');
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
         position: absolute;
-        top: 0;
-        bottom: 0;
+        -moz-background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
         left: 0;
-        right: 0;
+        top: 0%;
+        z-index: 9999;
     }
 }
 
@@ -25,7 +30,7 @@
     margin: 50% auto 0;
     height: 20%;
     width: 50%;
-    background:url('../images/loading_people.png') top center no-repeat;
+    background:url('../images/loading_people.gif') top center no-repeat;
     background-size:contain;
     animation:fade 2s infinite;
     -webkit-animation:fade 2s infinite;
@@ -70,11 +75,4 @@
     left:0;
     width:100%;
     height:100%;
-}
-.loading-overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index: 9999;
 }

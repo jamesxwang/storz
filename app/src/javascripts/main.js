@@ -15,16 +15,29 @@
         // var BASE_IMAGE_PATH = '/dist/images/';
         var BASE_IMAGE_PATH = '/images/';
         var fileList = [
-            'logo.png',
-            'arrow.png',
-            'loading_people.png',
-            'slide_1_background.png',
+            'background.png',
+            'grass.gif',
+            'loading_people.gif',
             'slide_1_title.png',
             'slide_1_text.png',
             'slide_1_start.png',
             'slide_1_search.png',
-            'slide_2_title.png',
-            'slide_3_background.png',
+            'slide_2_title1.png',
+            'slide_2_title2.png',
+            'slide_2_title3.png',
+            'slide_2_title4.png',
+            'slide_2_title5.png',
+            'slide_2_title6.png',
+            'slide_2_title7.png',
+            'slide_2_title8.png',
+            'slide_2_title9.png',
+            'slide_2_text1.png',
+            'slide_2_text2.png',
+            'slide_2_text3_1.png',
+            'slide_2_text3_2.png',
+            'slide_2_text3_3.png',
+            'slide_2_text3_4.png',
+            'slide_2_text3_5.png',
             'slide_3_title.png',
             'slide_3_option1.png',
             'slide_3_option2.png',
@@ -37,7 +50,6 @@
             'slide_3_popup4.png',
             'slide_3_popup5.png',
             'slide_3_continue.png',
-            'slide_4_background.png',
             'slide_4_title.png',
             'slide_4_option1.png',
             'slide_4_option2.png',
@@ -47,7 +59,6 @@
             'slide_4_popup2.png',
             'slide_4_popup3.png',
             'slide_4_popup4.png',
-            'slide_5_background.png',
             'slide_5_title.png',
             'slide_5_text.png',
             'slide_5_scene1.png',
@@ -56,17 +67,19 @@
             'slide_5_footprint1.png',
             'slide_5_footprint2.png',
             'slide_5_footprint3.png',
-            'slide_6_background.png',
+            'slide_5_people1.gif',
+            'slide_5_people2.gif',
+            'slide_5_people3.gif',
             'slide_6_title.png',
             'slide_6_calendar.png',
             'slide_7_title.png',
             'slide_7_info1.png',
             'slide_7_info2.png',
-            'slide_8_background.png',
             'slide_8_title.png',
             'slide_8_contact1.png',
             'slide_8_contact2.png',
             'slide_8_contact3.png',
+            'arrow.png',
 
         ];
         for(var i = 0; i < fileList.length; i++){
@@ -109,11 +122,6 @@
                     } else {
                         $upArrow.hide();
                     }
-                    // if (swiper.activeIndex === swiper.slides.length - 1) {
-                    //     $upArrow.hide();
-                    // } else {
-                    //     $upArrow.show();
-                    // }
                 },
                 onTransitionEnd: function (swiper) {       // play animations of the current slide
                     animationControl.playAnimation(swiper);
