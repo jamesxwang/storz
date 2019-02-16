@@ -61,35 +61,9 @@
     font-size: 15px;
     color: #fff
 }
-/****************************************/
-@-webkit-keyframes blink{
-    0%{
-        opacity: 0.6;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.6;
-    }
-}
-@keyframes blink{
-    0%{
-        opacity: 0.6;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.6;
-    }
-}
-.blink {
-    -webkit-animation: blink 1s infinite;
-    animation: blink 1s infinite;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
+/****************************************
+ *              Spark                   *
+ ****************************************/
 @-webkit-keyframes spark{
     0%{
         opacity: 1;
@@ -118,7 +92,61 @@
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
-/****************************************/
+/****************************************
+ *              searchAni               *
+ ****************************************/
+@-webkit-keyframes searchAni {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    25% {
+        -webkit-transform: translate(-20%, -20%);
+        transform: translate(-20%, -20%);
+    }
+    50% {
+        -webkit-transform: translate(0, -40%);
+        transform: translate(0, -40%);
+    }
+    75% {
+        -webkit-transform: translate(20%, -20%);
+        transform: translate(20%, -20%);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes searchAni {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    25% {
+        -webkit-transform: translate(-20%, -20%);
+        transform: translate(-20%, -20%);
+    }
+    50% {
+        -webkit-transform: translate(0, -40%);
+        transform: translate(0, -40%);
+    }
+    75% {
+        -webkit-transform: translate(20%, -20%);
+        transform: translate(20%, -20%);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+.searchAni {
+    -webkit-animation: searchAni 2s infinite linear;
+    animation: searchAni 2s infinite linear;
+}
+/****************************************/ 
 .viewed {
     opacity: .4;
 }
+/****************************************/
