@@ -57,34 +57,72 @@
         background-image: url('../images/slide_4_title2.png');
     }
     .option_wrapper {
+        width: 80%;
+        height: 40%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        top: 35%;
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-rows: 45% 10% 45%;
+        z-index: 2;
         .option1 {
-            top: 35%;
-            left: 12%;
             background-image: url('../images/slide_4_option1.png');
         }
         .option2 {
-            top: 35%;
-            right: 12%;
             background-image: url('../images/slide_4_option2.png');
         }
         .option3 {
-            top: 58%;
-            left: 12%;
             background-image: url('../images/slide_4_option3.png');
         }
         .option4 {
-            top: 58%;
-            right: 12%;
             background-image: url('../images/slide_4_option4.png');
         }
         .option1, .option2, .option3, .option4 {
-            width: 35%;
-            height: 20%;
+            width: 100%;
+            height: 100%;
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            position: absolute;
-            margin: auto;
+        }
+    }
+    .iconWrapper {
+        width: 80%;
+        height: 40%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        top: 35%;
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-rows: 45% 10% 45%;
+        .icon1 {
+            background-image: url('../images/slide_4_icon1.png');
+        }
+        .icon2 {
+            background-image: url('../images/slide_4_icon2.png');
+        }
+        .icon3 {
+            background-image: url('../images/slide_4_icon3.png');
+        }
+        .icon4 {
+            background-image: url('../images/slide_4_icon4.png');
+        }
+        div {
+            width: 20%;
+            height: 30%;;
+            top: 20%;
+            left: 40%;
+            right: 40%;
+            position: relative;
+            background-color: transparent;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 3;
         }
     }
     .search {
@@ -123,6 +161,7 @@
             right: 0;
             margin: auto;
             bottom: 0;
+            z-index: 20;
         }
     }
     .continue {

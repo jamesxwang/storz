@@ -56,18 +56,26 @@ module.exports = {
                     if (this.hasClass('popup1')) {
                         $('.slide-' + pageNum + ' .option1').attr('class',  $('.slide-' + pageNum + ' .option1').data('origin-class'));
                         $('.slide-' + pageNum + ' .option1').addClass('viewed');
+                        $('.slide-' + pageNum + ' .icon1').attr('class',  $('.slide-' + pageNum + ' .icon1').data('origin-class'));
+                        $('.slide-' + pageNum + ' .icon1').addClass('viewed');
                     }
                     if (this.hasClass('popup2')) {
                         $('.slide-' + pageNum + ' .option2').attr('class',  $('.slide-' + pageNum + ' .option2').data('origin-class'));
                         $('.slide-' + pageNum + ' .option2').addClass('viewed');
+                        $('.slide-' + pageNum + ' .icon2').attr('class',  $('.slide-' + pageNum + ' .icon2').data('origin-class'));
+                        $('.slide-' + pageNum + ' .icon2').addClass('viewed');
                     }
                     if (this.hasClass('popup3')) {
                         $('.slide-' + pageNum + ' .option3').attr('class',  $('.slide-' + pageNum + ' .option3').data('origin-class'));
                         $('.slide-' + pageNum + ' .option3').addClass('viewed');
+                        $('.slide-' + pageNum + ' .icon3').attr('class',  $('.slide-' + pageNum + ' .icon3').data('origin-class'));
+                        $('.slide-' + pageNum + ' .icon3').addClass('viewed');
                     }
                     if (this.hasClass('popup4')) {
                         $('.slide-' + pageNum + ' .option4').attr('class',  $('.slide-' + pageNum + ' .option4').data('origin-class'));
                         $('.slide-' + pageNum + ' .option4').addClass('viewed');
+                        $('.slide-' + pageNum + ' .icon4').attr('class',  $('.slide-' + pageNum + ' .icon4').data('origin-class'));
+                        $('.slide-' + pageNum + ' .icon4').addClass('viewed');
                     }
                     if (this.hasClass('popup5')) {
                         $('.slide-' + pageNum + ' .option5').attr('class',  $('.slide-' + pageNum + ' .option5').data('origin-class'));

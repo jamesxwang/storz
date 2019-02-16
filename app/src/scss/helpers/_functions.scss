@@ -183,8 +183,8 @@
         transform: translate(0, 0);
     }
     50% {
-        -webkit-transform: translate(0, -5%);
-        transform: translate(0, -5%);
+        -webkit-transform: translate(0, -2%);
+        transform: translate(0, -2%);
     }
     100% {
         -webkit-transform: translate(0, 0);
@@ -197,8 +197,8 @@
         transform: translate(0, 0);
     }
     50% {
-        -webkit-transform: translate(0, -5%);
-        transform: translate(0, -5%);
+        -webkit-transform: translate(0, -2%);
+        transform: translate(0, -2%);
     }
     100% {
         -webkit-transform: translate(0, 0);
@@ -283,5 +283,8 @@
 /****************************************/ 
 .viewed {
     opacity: .4;
+}
+.delay-0_25s {
+    animation-delay: 0.25s;
 }
 /****************************************/
