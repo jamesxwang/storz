@@ -10,6 +10,7 @@ module.exports = {
 
     javascripts: [
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/soundmanager2/script/soundmanager2.js',
         'node_modules/pxloader/dist/pxloader-all.js',
         'node_modules/swiper/dist/js/swiper.jquery.umd.js'
     ],

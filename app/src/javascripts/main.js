@@ -16,6 +16,7 @@
 
         // Images
         var BASE_IMAGE_PATH = '/images/';
+        var BASE_AUDIO_PATH = '/audios/';
         var fileList = [
             'background.png',
             'grass.gif',
@@ -110,8 +111,37 @@
             pxImage.imageNumber = i + 1;
             loader.add(pxImage);
         }
+
+        var autoPlayAudio = function() {
+            wx.config({
+                debug: false,
+                appId: '',
+                timestamp: 1,
+                nonceStr: '',
+                signature: '',
+                jsApiList: []
+            });
+            wx.ready(function() {
+                bgMusic.volume = 0.3;
+                bgMusic.play();
+            });
+        }
+
         loader.addCompletionListener(function(){
             console.log("Preload: "+fileList.length+" images in total.");
+
+            $btnMusic.show();
+            $btnMusic.addClass('ready');
+            $btnMusic.click(function() {
+                if (bgMusic.paused) {
+                    bgMusic.volume = 0.3;
+                    bgMusic.play();
+                    $(this).removeClass('paused');
+                } else {
+                    bgMusic.pause();
+                    $(this).addClass('paused');
+                }
+            });
 
             // init Swiper
             new Swiper('.swiper-container', {
@@ -138,37 +168,6 @@
                     animationControl.initAnimationItems();  // get items ready for animations
                     animationControl.playAnimation(swiper); // play animations of the first slide
                     popupControl.handlePopupEvents(swiper);
-                    
-                    // autoplay
-                    var autoPlayAudio = function() {
-                        wx.config({
-                            debug: false,
-                            appId: '',
-                            timestamp: 1,
-                            nonceStr: '',
-                            signature: '',
-                            jsApiList: []
-                        });
-                        wx.ready(function() {
-                            bgMusic.volume = 0.3;
-                            bgMusic.play();
-                        });
-                    }
-                    $btnMusic.show();
-                    if (!$btnMusic.hasClass('paused') && bgMusic.paused)
-                        bgMusic.play();
-                    autoPlayAudio();
-                    $btnMusic.addClass('ready');
-                    $btnMusic.click(function() {
-                        if (bgMusic.paused) {
-                            bgMusic.volume = 0.3;
-                            bgMusic.play();
-                            $(this).removeClass('paused');
-                        } else {
-                            bgMusic.pause();
-                            $(this).addClass('paused');
-                        }
-                    });
                 },
                 onTransitionStart: function (swiper) {     // on the last slide, hide .btn-swipe
                     if (swiper.activeIndex === 0) {
@@ -181,6 +180,12 @@
                     animationControl.playAnimation(swiper);
                     popupControl.handlePopupEvents(swiper);
                 },
+                onTouchStart: function (swiper, event) {
+                    // autoplay
+                    if (!$btnMusic.hasClass('paused') && bgMusic.paused)
+                        bgMusic.play();
+                    autoPlayAudio();
+                }
             });
             // hide loading animation since everything is ready
             $(".loading-overlay").slideUp();
@@ -192,7 +197,21 @@
             $(".progressNumb").html(percent + "%");
         });
 
-        loader.start();
+        // Sound
+        soundManager.url = 'soundManager2/';
+        soundManager.flashVersion = 9;
+        soundManager.useHighPerformance = true;
+        soundManager.flashLoadTimeout = 500;
+        soundManager.audioFormats.mp3.required = false;
+        soundManager.ontimeout(function(status) { 
+            soundManager.useHTML5Audio = true; 
+            soundManager.preferFlash = false; 
+            soundManager.reboot(); 
+        });
+        soundManager.onready(function() {
+            loader.addSound('bg_music', BASE_AUDIO_PATH + 'background.mp3');
+            loader.start();
+        });
         /***********************************************/
     });
 })();
