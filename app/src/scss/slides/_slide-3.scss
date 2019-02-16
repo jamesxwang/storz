@@ -31,8 +31,8 @@
         background-image: url('../images/logo.png');
     }
     .title {
-        width: 70%;
-        height: 35%;
+        width: 40%;
+        height: 30%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -42,6 +42,19 @@
         right: 0;
         margin: auto;
         background-image: url('../images/slide_3_title.png');
+    }
+    .title2 {
+        width: 60%;
+        height: 33%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url('../images/slide_3_title2.png');
     }
     .option_wrapper {
         .option1 {
