@@ -43,32 +43,41 @@
         grid-template-rows: 50% 50%;
         .title1 {
             display: grid;
-            grid-template-columns: 12% 12% 11% 11.71% 11% 11.71% 11% 11.71%;
+            grid-template-columns: 11.71% 11.71% 11.5% 11.71% 11.4% 11.71% 11.3% 11.71%;
             grid-template-rows: 100%;
             .title1_1 {
-                margin-top: 5%;
+                margin-top: 10%;
                 background-image: url('../images/slide_6_title1_1.png');
             }
             .title1_2 {
+                margin-top: 2%;
                 background-image: url('../images/slide_6_title1_2.png');
             }
             .title1_3 {
+                margin-left: 3%;
                 background-image: url('../images/slide_6_title1_3.png');
             }
             .title1_4 {
                 background-image: url('../images/slide_6_title1_4.png');
             }
             .title1_5 {
-                margin-top: 5%;
+                margin-left: 5%;
+                margin-top: 8%;
                 background-image: url('../images/slide_6_title1_5.png');
             }
             .title1_6 {
+                margin-left: 5%;
+                margin-top: 5%;
                 background-image: url('../images/slide_6_title1_6.png');
             }
             .title1_7 {
+                margin-left: 5%;
+                margin-top: 2%;
                 background-image: url('../images/slide_6_title1_7.png');
             }
             .title1_8 {
+                margin-left: 5%;
+                margin-top: 3%;
                 background-image: url('../images/slide_6_title1_8.png');
             }
             div {
@@ -78,7 +87,7 @@
         }
         .title2 {
             display: grid;
-            grid-template-columns: 8% 11.71% 11.71% 11.71% 11.71% 10.2% 11% 6%;
+            grid-template-columns: 13% 11% 11% 11% 10.8% 9.6% 10% 6%;
             grid-template-rows: 100%;
             .title2_1 {
                 background-image: url('../images/slide_6_title2_1.png');
@@ -93,13 +102,17 @@
                 background-image: url('../images/slide_6_title2_4.png');
             }
             .title2_5 {
-                margin-top: 5%;
+                margin-top: 7%;
+                margin-left: 4%;
                 background-image: url('../images/slide_6_title2_5.png');
             }
             .title2_6 {
+                margin-top: 5%;
                 background-image: url('../images/slide_6_title2_6.png');
             }
             .title2_7 {
+                margin-left: 8%;
+                margin-top: 10%;
                 background-image: url('../images/slide_6_title2_7.png');
             }
             div {
