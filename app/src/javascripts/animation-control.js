@@ -63,7 +63,7 @@ module.exports = {
         });
     },
 
-    resetCalendarAnimation() {
+    resetCalendarAnimation: function() {
         $(".calendar1_date1").css({"width": 0 + "%"});
         $(".calendar1_date2").css({"width": 0 + "%"});
         $(".calendar2_date1").css({"width": 0 + "%"});
