@@ -121,32 +121,133 @@
             }
         }
     }
-    .calendar1 {
+    .calendarWrapper {
         width: 80%;
-        height: 40%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+        height: 70%;
         position: absolute;
-        top: 22%;
         left: 0;
         right: 0;
+        top: 30%;
         margin: auto;
-        background-image: url('../images/slide_6_calendar1.png');
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        .calendar1 {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: auto;
+            background-image: url('../images/slide_6_calendar1.png');
+        }
+        .calendar2 {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-image: url('../images/slide_6_calendar2.png');
+        }
     }
-    .calendar2 {
+    .dateWrapper {
         width: 80%;
-        height: 40%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+        height: 70%;
         position: absolute;
-        top: 50%;
         left: 0;
         right: 0;
+        top: 30%;
         margin: auto;
-        background-image: url('../images/slide_6_calendar2.png');
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        .calendar1_date1 {
+            width: 0%;
+            height: 75%;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/slide_6_calendar1_date1.png');
+        }
+        .calendar2_date1 {
+            width: 100%;
+            height: 65%;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/slide_6_calendar2_date1.png');
+        }
     }
+    .dateWrapper2 {
+        width: 80%;
+        height: 70%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        .calendar1_date2 {
+            width: 0%;
+            height: 75%;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/slide_6_calendar1_date2.png');
+        }
+        .calendar2_date2 {
+            width: 0%;
+            height: 65%;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/slide_6_calendar2_date2.png');
+        }
+    }
+    .dateWrapper3 {
+        width: 80%;
+        height: 70%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        .calendar2_date3 {
+            width: 0%;
+            height: 65%;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/slide_6_calendar2_date3.png');
+        }
+    }
+    .dateWrapper4 {
+        width: 80%;
+        height: 70%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        .calendar2_date4 {
+            width: 0%;
+            height: 66%;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/slide_6_calendar2_date4.png');
+        }
+    }
+    
     .continue {
         width: 23%;
         height: 7%;
@@ -158,5 +259,56 @@
         right: 10%;
         margin: auto;
         background-image: url('../images/slide_3_continue.png');
+    }
+    // iPhone X
+    // @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    //     // calendar1
+    //     .calendar1_date1 {
+    //         height: 62%!important;
+    //     }
+    //     .calendar1_date2 {
+    //         height: 62%!important;
+    //     }
+    //     // calendar2
+    //     .calendar2_date1 {
+    //         height: 54%!important;
+    //     }
+    //     .calendar2_date2 {
+    //         height: 54%!important;
+    //     }
+    //     .calendar2_date3 {
+    //         height: 54%!important;
+    //     }
+    //     .calendar2_date4 {
+    //         height: 54%!important;
+    //     }
+    // }
+    @media screen and (min-device-width:375px) and (min-device-height:812px){
+        // calendar1
+        .calendar1_date1 {
+            height: 62%!important;
+        }
+        .calendar1_date2 {
+            height: 62%!important;
+        }
+        // calendar2
+        .calendar2_date1 {
+            height: 54%!important;
+        }
+        .calendar2_date2 {
+            height: 54%!important;
+        }
+        .calendar2_date3 {
+            height: 54%!important;
+        }
+        .calendar2_date4 {
+            height: 54%!important;
+        }
+    }
+    // Pixel 2 XL
+    @media screen and (device-width:411px) and (device-height:823px){
+        .calendar2_date4 {
+            height: 58%!important;
+        }
     }
 }

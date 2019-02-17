@@ -95,6 +95,13 @@
             'slide_6_title2_6.png',
             'slide_6_title2_7.png',
             'slide_6_calendar1.png',
+            'slide_6_calendar1_date1.png',
+            'slide_6_calendar1_date2.png',
+            'slide_6_calendar1.png',
+            'slide_6_calendar2_date1.png',
+            'slide_6_calendar2_date2.png',
+            'slide_6_calendar2_date3.png',
+            'slide_6_calendar2_date4.png',
             'slide_6_calendar2.png',
             'slide_7_title1.png',
             'slide_7_title2.png',
@@ -186,12 +193,14 @@
                 onTransitionEnd: function (swiper) {       // play animations of the current slide
                     animationControl.playAnimation(swiper);
                     popupControl.handlePopupEvents(swiper);
+                    animationControl.initCalendarAnimation(swiper);
                 },
                 onTouchStart: function (swiper, event) {
                     // autoplay
-                    if (!$btnMusic.hasClass('paused') && bgMusic.paused)
+                    if (!$btnMusic.hasClass('paused') && bgMusic.paused) {
                         bgMusic.play();
-                    autoPlayAudio();
+                        autoPlayAudio();
+                    }
                 }
             });
             // hide loading animation since everything is ready
