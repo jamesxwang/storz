@@ -18,6 +18,7 @@
         var BASE_IMAGE_PATH = '/images/';
         var BASE_AUDIO_PATH = '/audios/';
         var fileList = [
+            'favicon.png',
             'background.png',
             'grass.gif',
             'loading_people.png',
