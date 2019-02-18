@@ -24,17 +24,18 @@ module.exports = {
             self.resetCalendarAnimation();
 
         var animationEnd = self.initAnimationEnd();
-        $('.calendar1').one(animationEnd, function() {
+        $('.calendar_1').one(animationEnd, function() {
+            
             var i = 0;
             setTimeout(function calendarAni() {
-                $(".calendar1_date1").css({"width":i+++ "%"});
-                if (i < 100) setTimeout(calendarAni, 10);
+                $(".calendar_2").css({"width":i+++ "%"});
+                if (i < 80) setTimeout(calendarAni, 10);
             }, 0);
             
             var j = 0;
             setTimeout(function calendarAni2() {
-                $(".calendar1_date2").css({"width":j+++ "%"});
-                if (j < 100) setTimeout(calendarAni2, 10);
+                $(".calendar_3").css({"width":j+++ "%"});
+                if (j < 80) setTimeout(calendarAni2, 10);
             }, 900);
 
             setTimeout(function() {
@@ -43,26 +44,26 @@ module.exports = {
 
             var k = 0;
             setTimeout(function calendarAni3() {
-                $(".calendar2_date1").css({"width":k+++ "%"});
-                if (k < 100) setTimeout(calendarAni3, 10);
+                $(".calendar_4").css({"width":k+++ "%"});
+                if (k < 80) setTimeout(calendarAni3, 10);
             }, 1800);
 
             var l = 0;
             setTimeout(function calendarAni4() {
-                $(".calendar2_date2").css({"width":l+++ "%"});
-                if (l < 100) setTimeout(calendarAni4, 10);
+                $(".calendar_5").css({"width":l+++ "%"});
+                if (l < 80) setTimeout(calendarAni4, 10);
             }, 2700);
 
             var n = 0;
             setTimeout(function calendarAni5() {
-                $(".calendar2_date3").css({"width":n+++ "%"});
-                if (n < 100) setTimeout(calendarAni5, 10);
+                $(".calendar_6").css({"width":n+++ "%"});
+                if (n < 80) setTimeout(calendarAni5, 10);
             }, 3600);
 
             var m = 0;
             setTimeout(function calendarAni6() {
-                $(".calendar2_date4").css({"width":m+++ "%"});
-                if (m < 100) setTimeout(calendarAni6, 10);
+                $(".calendar_7").css({"width":m+++ "%"});
+                if (m < 80) setTimeout(calendarAni6, 10);
             }, 4500);
             
             setTimeout(function() {
@@ -72,12 +73,12 @@ module.exports = {
     },
 
     resetCalendarAnimation: function() {
-        $(".calendar1_date1").css({"width": 0 + "%"});
-        $(".calendar1_date2").css({"width": 0 + "%"});
-        $(".calendar2_date1").css({"width": 0 + "%"});
-        $(".calendar2_date2").css({"width": 0 + "%"});
-        $(".calendar2_date3").css({"width": 0 + "%"});
-        $(".calendar2_date4").css({"width": 0 + "%"});
+        $(".calendar_2").css({"width": 0 + "%"});
+        $(".calendar_3").css({"width": 0 + "%"});
+        $(".calendar_4").css({"width": 0 + "%"});
+        $(".calendar_5").css({"width": 0 + "%"});
+        $(".calendar_6").css({"width": 0 + "%"});
+        $(".calendar_7").css({"width": 0 + "%"});
     },
 
     initAnimationItems: function() {
