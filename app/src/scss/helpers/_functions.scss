@@ -253,7 +253,7 @@
         opacity: 1;
     }
     20%{
-        opacity: 0.6;
+        opacity: 0.5;
     }
     40%,
     100%{
@@ -265,7 +265,7 @@
         opacity: 1;
     }
     20%{
-        opacity: 0.6;
+        opacity: 0.5;
     }
     40%,
     100%{
@@ -274,11 +274,11 @@
 }
 
 .breath {
-    -webkit-tap-highlight-color:transparent;
-    -webkit-animation: breath 4s infinite;
-    animation: breath 4s infinite;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
+    // -webkit-tap-highlight-color:transparent;
+    // -webkit-animation: breath 4s infinite;
+    // animation: breath 4s infinite;
+    // -webkit-animation-duration: 4s;
+    // animation-duration: 4s;
 }
 /****************************************
  *              stampAni                  *
@@ -314,7 +314,7 @@
 }
 /****************************************/ 
 .viewed {
-    opacity: .4;
+    opacity: .3;
 }
 .hide {
     opacity: 0;

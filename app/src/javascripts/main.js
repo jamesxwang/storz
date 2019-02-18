@@ -4,6 +4,7 @@
     // load dependencies
     var animationControl = require('./animation-control.js');
     var popupControl = require('./popup-control.js');
+    var wechatShare = require('./wechat-share.js');
 
     $(document).ready(function () {
         /***********************************************
@@ -78,7 +79,7 @@
             'slide_5_footprint2.png',
             'slide_5_footprint3.png',
             'slide_5_people1.png',
-            'slide_5_people2.gif',
+            'slide_5_people2.png',
             'slide_5_people3.png',
             'slide_6_title1_1.png',
             'slide_6_title1_2.png',
@@ -145,6 +146,14 @@
         loader.addCompletionListener(function(){
             console.log("Preload: "+fileList.length+" images in total.");
 
+            // init
+            wechatShare.init();
+
+            // autoplay
+            if (!$btnMusic.hasClass('paused') && bgMusic.paused) {
+                bgMusic.play();
+                autoPlayAudio();
+            }
             $btnMusic.show();
             $btnMusic.addClass('ready');
             $btnMusic.click(function() {
