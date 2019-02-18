@@ -103,6 +103,8 @@
             'slide_6_calendar2_date3.png',
             'slide_6_calendar2_date4.png',
             'slide_6_calendar2.png',
+            'slide_6_stamp1.png',
+            'slide_6_stamp2.png',
             'slide_7_title1.png',
             'slide_7_title2.png',
             'slide_7_title3.png',

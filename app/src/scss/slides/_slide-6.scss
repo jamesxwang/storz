@@ -247,7 +247,28 @@
             background-image: url('../images/slide_6_calendar2_date4.png');
         }
     }
-    
+    .stamp1 {
+        width: 10%;
+        height: 5%;
+        top: 40%;
+        left: 28%;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-image: url('../images/slide_6_stamp1.png');
+    }
+    .stamp2 {
+        width: 12%;
+        height: 6%;
+        top: 66%;
+        left: 27%;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-image: url('../images/slide_6_stamp2.png');
+    }
     .continue {
         width: 23%;
         height: 7%;
@@ -303,6 +324,9 @@
         }
         .calendar2_date4 {
             height: 54%!important;
+        }
+        .stamp1 {
+            top: 38%!important;
         }
     }
     // Pixel 2 XL

@@ -30,12 +30,16 @@ module.exports = {
                 $(".calendar1_date1").css({"width":i+++ "%"});
                 if (i < 100) setTimeout(calendarAni, 10);
             }, 0);
-
+            
             var j = 0;
             setTimeout(function calendarAni2() {
                 $(".calendar1_date2").css({"width":j+++ "%"});
                 if (j < 100) setTimeout(calendarAni2, 10);
             }, 900);
+
+            setTimeout(function() {
+                $('.stamp1').addClass('show');
+            }, 1500);
 
             var k = 0;
             setTimeout(function calendarAni3() {
@@ -60,6 +64,10 @@ module.exports = {
                 $(".calendar2_date4").css({"width":m+++ "%"});
                 if (m < 100) setTimeout(calendarAni6, 10);
             }, 4500);
+            
+            setTimeout(function() {
+                $('.stamp2').addClass('show');
+            }, 5000);
         });
     },
 
