@@ -119,6 +119,7 @@
             'slide_8_contact1.png',
             'slide_8_contact2.png',
             'slide_8_contact3.png',
+            'slide_8_end.png',
             'arrow.png',
 
         ];

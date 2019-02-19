@@ -68,4 +68,16 @@
             background-size: contain;
         }
     }
+    .end {
+        width: 19%;
+        height: 7%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 92%;
+        right: 10%;
+        margin: auto;
+        background-image: url('../images/slide_8_end.png');
+    }
 }

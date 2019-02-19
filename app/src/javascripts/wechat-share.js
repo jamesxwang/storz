@@ -1,9 +1,10 @@
 var $ = require('jquery');
+
 module.exports = {
     init: function() {
         // 当前页面访问路径
         var url = location.href.split('#')[0].toString();
-        var getUrl = "http://123.207.34.71/activity/wechat/getsignature";	// ajax请求路径
+        var getUrl = 'http://game.quantify.site/activity/wechat/getsignature'; // ajax请求路径
 
         $.get(getUrl,
             {"url": url}).done(function (data) {
@@ -30,7 +31,7 @@ module.exports = {
 
         var fenxiangJson_data = {
             title: document.title, // 分享标题
-            desc: '测试数据', // 分享描述
+            desc: '卡尔史托斯2019My Benefits!', // 分享描述
             link: 'http://karlstorz.quantify.site', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
             imgUrl: 'http://karlstorz.quantify.site/images/favicon.png', // 分享图标
             success: function () {
