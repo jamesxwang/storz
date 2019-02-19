@@ -279,7 +279,7 @@
         background-image: url('../images/slide_3_continue.png');
     }
     // iPhone X & more
-    @media screen and (min-device-width:375px) and (min-device-height:812px){
+    @media screen and (min-device-width:376px) and (min-device-height:813px){
         .calendar_2_wrapper {
             height: 40%;
             left: 2%;
@@ -353,23 +353,34 @@
     }
     // iPhone X
     @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-        // .calendar_2_wrapper {
-        // }
-        // .calendar_3_wrapper {
-        // }
-        // .calendar_4_wrapper {
-        // }
-        // .calendar_5_wrapper {
-        // }
-        // .calendar_6_wrapper {
-        // }
-        // .calendar_7_wrapper {
-        // }
+        .calendar_2_wrapper {
+            height: 46%;
+        }
+        .calendar_3_wrapper {
+            height: 46%;
+
+        }
+        .calendar_4_wrapper {
+            height: 46.5%;
+
+        }
+        .calendar_5_wrapper {
+            height: 46.5%;
+
+        }
+        .calendar_6_wrapper {
+            height: 46.5%;
+
+        }
+        .calendar_7_wrapper {
+            height: 46.5%;
+
+        }
         .stamp1 {
             top: 39%!important;
         }
         .stamp2 {
-            top: 63%!important;
+            top: 59%!important;
         }
     }
 }
